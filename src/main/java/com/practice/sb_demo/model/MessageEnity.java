@@ -1,13 +1,13 @@
-package com.practice.sb_demo.entities;
+package com.practice.sb_demo.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "Messages")
 public class MessageEnity {
@@ -34,14 +34,4 @@ public class MessageEnity {
     @Temporal(TemporalType.TIMESTAMP)
     private Date readAtTS;
 
-    public MessageEnity() {
-        super();
-    }
-
-    public MessageEnity(String from, String to, String content, Date createdAtTS) {
-        this.sender = from;
-        this.receiver = to;
-        this.content = content;
-        this.createdAtTS = createdAtTS;
-    }
 }

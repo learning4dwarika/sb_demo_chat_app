@@ -1,12 +1,13 @@
 package com.practice.sb_demo.services;
 
-import com.practice.sb_demo.dtos.MessageDto;
+import com.practice.sb_demo.dtos.request.MessageDto;
+import com.practice.sb_demo.dtos.response.MessageResponseDto;
 
 import java.text.ParseException;
 
 public interface MessageService {
 
-    public MessageDto addMessage(MessageDto message) throws ParseException;
+    public MessageResponseDto addMessage(MessageDto message) throws ParseException;
 
-    public MessageDto getMessage(long messageId) throws ParseException;
+    public MessageResponseDto getMessage(long messageId) throws ParseException;
 }
