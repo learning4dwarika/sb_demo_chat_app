@@ -1,4 +1,4 @@
-package com.practice.sb_demo.dtos;
+package com.practice.sb_demo.dtos.request;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import lombok.*;
 public class MessageDto {
 
 
-    private long messageId;
+//    private long messageId;
 
     private String from;
     private String to;
